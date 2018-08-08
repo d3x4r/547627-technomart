@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: Влад Подъяблонский(https://up.htmlacademy.ru/htmlcss/22/user/547627).
-* Наставник: Елена Забара(https://htmlacademy.ru/profile/lena___elena).
+* Студент: [Влад Подъяблонский](https://up.htmlacademy.ru/htmlcss/22/user/547627).
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
