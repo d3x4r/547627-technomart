@@ -8,17 +8,10 @@
 		<header class="header">
 			<div class="header-top">
 				<a class="header-logo" href="index.html">Техномарт</a>
-				<!--ниже должна быть форма поиска, а пока черновик:
-				<form class="site-search-form" action="https://echo.htmlacademy.ru" method="post">
-					<label class="site-search-label">
-							<span class="site-search-label>
-								Поиск:
-							</span>
-							<input class="site-search-input" type="search" name="site-search" #id="site-search">
-					</label>
+				<form class="site-search-form" action="https://echo.htmlacademy.ru" method="get">
+					<label class=" visually-hidden" for="site-search">Поиск по сайту</label>
+          <input class="site-search-input" type="text" name="site-search" id="site-search" placeholder="Поиск:">
 				</form>
-				-->
-				<span>Поиск:</span>
 				<ul class="header-buy-items">
 					<li><a href="#">Закладки: <span class="header-bookmark-value">0</span></a></li>
 					<li><a href="#">Корзина: <span class="header-basket-value">10</span></a></li>
@@ -67,6 +60,70 @@
 			
 			<section class="catalog">
 				<h2 class="catalog-title">Перфораторы</h2>
+				<div class="left-catalog-container">
+					<span class="sorting-title">Фильтр:</span>
+           <form name="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend class="legend-title">Цена:</legend>
+              <div class="price-range-form">
+								<div class="range-inner">
+									<div class="range-full-width">
+										<span class="required-width"></span>
+									</div>
+										<button class="min-price-button" type="button"></button>
+										<button class="max-price-button" type="button"></button>
+								</div>
+								<div class="price-range-input">
+									<label class="visually-hidden" for="min-price-value">Минимальная цена:</label>
+									<input type="text" name="min-price-value" id="min-price-value" placeholder="0">
+									<span class="connection-input-symbol">—</span>
+									<label class="visually-hidden" for="max-price-value">Максимальная цена:</label>
+									<input type="text" name="max-price-value" id="max-price-value" placeholder="30 000">
+								</div>
+							</div>
+            </fieldset>
+            <fieldset>
+              <legend class="legend-title">Производители:</legend>
+              <ul class="company-form-list">
+                <li>
+                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <label for="bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskol" id="interskol">
+                  <label for="interskol">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="makita" checked>
+                  <label for="makita">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt">Dewalt</label>
+                  </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul class="charging-form-list">
+                <li>
+                    <input type="radio" name="charge" value="battery" id="with-battery" checked>
+                    <label for="with-battery">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="charge" value="without-battery" id="without-battery">
+                  <label for="without-battery">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="right-catalog-container">
 					<div class="catalog-items-sorting">
 						<span class="sorting-title">Сортировка:</span>
 						<ul class="sortin-list">
@@ -77,7 +134,7 @@
 						<ul class="sorting-icon">
 							<li><a class="sorting-up" href="#"><span class="visually-hidden">По-возрастанию</span></a></li>
 							<li><a class="sorting-down" href="#"><span class="visually-hidden">По убыванию</span></a></li>
-							</ul>
+						</ul>
 					</div>
 					<section	class="catalog-items">
 						<ul class="catalog-items-list">
@@ -158,7 +215,7 @@
 								<h3>Перфоратор BOSCH BFG 6000</h3>
 								<span class="oldprice">30500 Р.</span>
 								<span class="price">25500 Р.</span>
-							</li>
+								</li>
 							<li class="catalog-item">
 								<img src="img/bfg2000.jpg" width="218" height="150" alt="Перфоратор BOSCH BFG 2000">
 								<div class="catalog-buy-buttons">
@@ -170,22 +227,20 @@
 							</li>
 						</ul>
 					</section>
-					<section class="form">
-						<!-- место для формы-->
-					</section>
-					<div class="paginator">
-						<ul class="paginator-list">
-							<li><a>1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Следующая</a></li>
-						</ul>
-					</div>
+				</div>
+				<div class="paginator">
+					<ul class="paginator-list">
+						<li><a>1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">Следующая</a></li>
+					</ul>
+				</div>
 			</section>
 			<article class="drill-facts">
 				<h2 class="drill-facts-title">Пара слов о перфораторах</h2>
 				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В 					ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрел
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 				</p>
 			</article>
 		</main>
@@ -235,6 +290,6 @@
 			<p>Товар добавлен в корзину!</p>
 			<a href="#" class="button">Оформить заказ</a>
 			<a href="#" class="button button-clean">Продолжить покупки</a>
-			<button class="close-modal"></button>
+			<button class="close-modal" type="button"></button>
 		</section>
 	</body>
