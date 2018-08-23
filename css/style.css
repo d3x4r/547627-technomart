@@ -307,7 +307,7 @@ a {
 }
 
 .catalog-item:hover {
-	border: none;
+	border: 1px solid transparent;
 	box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -409,6 +409,7 @@ a {
 	font-family: Cuprum, Arial, sans-serif;
 	font-size: 36px;
 	line-height: 36px;
+	text-transform: uppercase;
 	color: #32425c;
 }
 
@@ -498,6 +499,7 @@ a {
 }
 
 .developers-label {
+	font-weight: normal;
 	color: #ffffff;
 }
 
@@ -546,15 +548,54 @@ button.button {
 	background-color: #f4f4f4;
 }
 
-.write-us input::-webkit-input-placeholder {color: #999999;}
-.write-us input::-moz-placeholder {color: #999999;}
-.write-us input:-ms-input-placeholder {color: #999999;}
-.write-us input:-moz-placeholder {color: #999999;}
-
-.write-us textarea::-webkit-input-placeholder {color: #999999;}
-.write-us textarea::-moz-placeholder {color: #999999;}
-.write-us textarea:-ms-input-placeholder {color: #999999;}
-.write-us textarea:-moz-placeholder {color: #999999;}
+.write-us input::-webkit-input-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+	}
+.write-us input::-moz-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us input:-ms-input-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us input:-moz-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us textarea::-webkit-input-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us textarea::-moz-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us textarea:-ms-input-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.write-us textarea:-moz-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
 
 .breadcrumbs-items {
 	list-style: none;
@@ -571,7 +612,7 @@ button.button {
 }
 
 .sorting-title {
-	line-height: #18px;
+	line-height: 18px;
 	text-transform: uppercase;
 	
 	background-color: #f7f3ec;
@@ -608,6 +649,7 @@ button.button {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .company-form-list,
@@ -631,6 +673,12 @@ button.button {
 	
 	border-bottom: 1px dotted red;
 	}
+
+.sort-type {
+	color: #ee3643;
+	
+	border:none;
+}
 	
 .sorting-item:hover {
 	color: #000000;
@@ -650,6 +698,7 @@ button.button {
 }
 
 .paginator-item {
+	text-transform: uppercase;
 	color: #000000;
 	line-height: 18px;
 
