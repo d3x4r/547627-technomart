@@ -317,6 +317,7 @@ a {
 
 .catalog-item {
 	width: 219px;
+	margin-bottom: 20px;
 	
 	border: 1px solid #eaeaea;
 }
@@ -627,20 +628,26 @@ button.button {
 }
 
 .breadcrumbs-items {
+	display: flex;
+	margin-right: auto;
 	list-style: none;
 }
 
 .breadcrumb {
+	/*Временно */padding-right: 5px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
 }
 
 .catalog-title {
+	margin-bottom: 20px;
+	
 	background-color: #f2f6f8;
 }
 
 .sorting-title {
+	margin-right: auto;
 	line-height: 18px;
 	text-transform: uppercase;
 	
@@ -662,6 +669,8 @@ button.button {
 .price-range-form input:-moz-placeholder {font-size: 17px; color: #000000;}
 
 .catalog-items-sorting {
+	margin-bottom: 20px;
+	display: flex;
 	background-color: #f7f3ec;
 }
 
@@ -683,6 +692,8 @@ button.button {
 
 .company-form-list,
 .charging-form-list {
+	margin: 0;
+	padding: 0;
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -690,8 +701,10 @@ button.button {
 	list-style: none;
 }
 
-.sortin-list,
+.sorting-list,
 .sorting-icon {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -724,6 +737,34 @@ button.button {
 .catalog-items-list,
 .paginator-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.paginator-list {
+	margin-bottom: 60px;
+}
+
+.catalog-items-list {
+	margin-bottom: 32px;
+}
+
+.paginator-list {
+	display: flex;
+	margin-left: 240px;
+}
+
+.catalog-items-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.button-catalog-form {
+	font-family: "PT Sans", Arial, sans-serif;
+	border: 1px solid #e5e5e5;
+	background-color: #ffffff;
+	text-transform: uppercase;
 }
 
 .paginator-item {
@@ -754,6 +795,7 @@ button.button {
 }
 
 .modal-cart-add {
+	width: 620px;
 	font-family: Cuprum, Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
@@ -882,4 +924,21 @@ button.button {
 .footer-features-list {
 	display: flex;
 	margin-left: auto;
+}
+
+.left-catalog-container {
+	width: 220px;
+}
+
+.right-catalog-container {
+	width: 700px;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sorting-list {
+	display: flex;
 }
