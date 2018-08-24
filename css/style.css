@@ -15,12 +15,11 @@ a {
 }
 
 .header {
+	margin-bottom: 60px;
+	
 	font-family: Cuprum, Arial, sans-serif;
 	
 	background-color: #f3f7f9;
-  background-image: url("../img/header-background.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .header-top {
@@ -76,6 +75,8 @@ a {
 .site-navigation,
 .user-login-list,
 .user-order-menu {
+	margin:0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -118,6 +119,9 @@ a {
 }
 
 .main-title {
+	margin: 0;
+	padding: 0;
+	
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
@@ -182,6 +186,9 @@ a {
 }
 
 .site-navigation{
+	display: flex;
+	justify-content: space-between;
+	
 	font-size: 17px;
 	line-height: 17px;
 	
@@ -201,6 +208,9 @@ a {
 }
 
 .features-item {
+	width: 300px;
+	margin-bottom: 20px;
+	
 	font-family: Cuprum, Arial, sans-serif;
 	color: #ffffff;
 }
@@ -299,10 +309,15 @@ a {
 	
 .goods-list,
 .companies-list {
+	margin: 0;
+	padding: 0;
+	
 	list-style: none;
 }
 
 .catalog-item {
+	width: 219px;
+	
 	border: 1px solid #eaeaea;
 }
 
@@ -363,6 +378,10 @@ a {
 }
 
 .companies-item {
+	width: 219px;
+	margin:0px;
+	margin-bottom: 20px;
+	
 	border: 1px solid #e5e5e5;
 }
 
@@ -376,9 +395,6 @@ a {
 
 .service {
 	background-color: #f4f8f9;
-	background-image: url("../img/service-background.jpg");
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 
 .service-slider-list {
@@ -424,12 +440,17 @@ a {
 }
 
 .footer{
+	margin-top: 85px;
+	
 	font-family: Cuprum, Arial, sans-serif;
 	}
 
-.footer-top,
-.footer-middle {
+.footer-top-group {
 	background-color: #32425c;
+}
+
+.footer-top {
+	margin-bottom: 28px;
 }
 
 .footer-logo {
@@ -441,6 +462,8 @@ a {
 .footer-features-list,
 .footer-social-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-item {
@@ -469,6 +492,8 @@ a {
 }
 
 .footer-adress {
+	margin: 0px;
+	padding: 0px;
 	font-size: 18px;
 	line-heigth: 24px;
 	color: #f3f7f9;
@@ -488,6 +513,8 @@ a {
 }
 
 .footer-copyright {
+	margin: 0px;
+	
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -516,6 +543,8 @@ a {
 }
 
 .write-us {
+	width: 620px;
+	
 	font-family: Cuprum, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
@@ -745,4 +774,112 @@ button.button {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.content-center {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.features-left-column {
+	display: flex;
+	width: 621px;
+	flex-wrap: wrap;
+}
+
+.features-left-column .features-item:first-child {
+	margin-right: 20px;
+}
+
+.features-right-column {
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+}
+
+.features {
+	display: flex;
+	justify-content: space-between;
+}
+
+.goods {
+	margin-bottom: 21px;
+}
+
+.goods-heading {
+	margin-bottom: 20px;
+}
+
+.goods-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.companies {
+	margin-bottom: 65px;
+}
+
+.companies-heading {
+	margin-bottom: 20px;
+}
+
+.companies-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+} 
+
+.service-title {
+	margin:0;
+	padding:0;
+}
+
+.about-contact-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo {
+	width: 540px;
+}
+
+.contacts {
+	width: 300px;
+}
+
+.header-top-row  {
+	display: flex;
+	margin-bottom: 46px;
+}
+
+.header-buy-items {
+	display: flex;
+	margin-left: auto
+}
+
+.header-middle {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.header-bottom {
+	margin-bottom: 119px;
+}
+
+.footer-row {
+	display: flex;
+}
+
+.footer-navigation-list {
+	display: flex;
+	margin-left: auto;
+}
+
+.footer-middle {
+	display: flex;
+}
+
+.footer-features-list {
+	display: flex;
+	margin-left: auto;
 }
