@@ -561,6 +561,10 @@ button.button {
 
 .write-us input,
 .write-us textarea {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	
 	border: 2px solid #dee3e4;
 }
 
@@ -821,6 +825,8 @@ button.button {
 .content-center {
 	width: 940px;
 	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .features-left-column {
