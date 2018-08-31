@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="header-middle content-center">
-				<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<h1 class="main-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
 				<div class="header-contacts">
 					<span class="header-contacts-phone">+7 (812) 555-05-55</span>
 					<span class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -64,6 +64,8 @@
 						<a href="#" class="features-link button link-tool">на все случаи</a>
 					</section>
 					<section class="features-slider">
+						<input class="visually-hidden" type="radio" id="drill-slide" name="toggle-main-slide" checked>
+						<input class="visually-hidden" type="radio" id="perf-slide" name="toggle-main-slide">
 						<div class="slider-inner slider-inner-first">
 							<h3 class="features-slider-text slider-title">Дрели</h3>
 							<span class="features-slider-text slider-slogan">Соседям на радость!</span>
@@ -75,6 +77,10 @@
 							<span class="features-slider-text slider-slogan">Настоящие мужские игрушки</span>
 							<img src="img/slide-2.jpg" alt="perforator" width="620" height="266">
 							<a class="button button-red  slider-button-inner" href="catalog.html">Открыть каталог</a>
+						</div>
+						<div class="features-slider-toggles">
+							<label class="main-slider-toggle main-slider-toggle-1" for="drill-slide" aria-label="Первый слайд"></label>
+							<label class="main-slider-toggle main-slider-toggle-2" for="perf-slide" aria-label="Второй слайд"></label>
 						</div>
 						<div class="features-slider-buttons">
 							<button class="slider-buttons-previous" aria-label="Переключить на предыдущий слайд"></button>
@@ -106,12 +112,10 @@
 				<div class="goods-items">
 					<ul class="goods-list">
 						<li class="catalog-item">
-							<div class="catalog-image-container">
 								<img src="img/bfg9000.jpg" width="218" height="150" alt="Перфоратор BOSCH BFG 9000">
-								<div class="catalog-buy-buttons">
+							<div class="catalog-buy-buttons">
 									<a class="button button-green" href="#">Купить</a>
 									<a class="button button-bookmark" href="#">В закладки</a>
-							</div>
 							</div>
 							<h3 class="catalog-item-name">Перфоратор BOSCH BFG 9000</h3>
 							<span class="price oldprice">32500 Р.</span>
@@ -175,11 +179,14 @@
 					<p class="service-promo">Хороший интернет-магазин отличается от плохого не только ценами!
 							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					<section class="service-slider">
+						<input class="visually-hidden" type="radio" id="delivery-radio-button" name="slider-service" checked>
+						<input class="visually-hidden" type="radio" id="guarantee-radio-button" name="slider-service">
+						<input class="visually-hidden" type="radio" id="credit-radio-button" name="slider-service">
 						<div class="service-slider-buttons">
 							<ul class="service-slider-list">
-								<li><button class="service-button service-button-active" type="button">Доставка</button></li>
-								<li><button class="service-button service-button-second" type="button">Гарантия</button></li>
-								<li><button class="service-button service-button-third" type="button">Кредит</button></li>
+								<li><label class="service-button active-service-button" for="delivery-radio-button">Доставка</label></li>
+								<li><label class="service-button" id="ddd" for="guarantee-radio-button">Гарантия</label></li>
+								<li><label class="service-button" for="credit-radio-button">Кредит</label></li>
 							</ul>
 						</div>
 						<div class="service-slider-inner">
@@ -230,7 +237,7 @@
 			</div>
 			</main>
 			
-		<footer class="footer">
+		<footer class="main-footer">
 			<div class="footer-top-group">
 				<div class="footer-top">
 					<div class="footer-row content-center">
