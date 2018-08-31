@@ -288,19 +288,23 @@
 		<section class="write-us">
 			<h2 class="visually-hidden">Заблудились? Напишите Нам!</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="half-width">
-					<label class="write-us-title" for="name">Ваше имя:</label>
-					<input type="text" name="write-us-name" id="name" placeholder="Имя Фамилия">
+				<div class="write-us-inputs">
+					<div class="write-us-top">
+						<div class="half-width">
+							<label class="write-us-title" for="name">Ваше имя:</label>
+							<input class="write-us-name" type="text" name="write-us-name" id="name" placeholder="Имя Фамилия">
+						</div>
+						<div class="half-width">
+							<label class="write-us-title" for="email">Ваш e-mail:</label>
+							<input class="write-us-email" type="email" name="write-us-email" id="email" placeholder="email@example.com">
+						</div>
+					</div>
+					<div class="max-width">
+						<label class="write-us-title" for="letter">Текст письма:</label>
+						<textarea class="write-us-letter" name="write-us-letter" id="letter" placeholder="В свободной форме"></textarea>
+					</div>
 				</div>
-				<div class="half-width">
-					<label class="write-us-title" for="email">Ваш e-mail:</label>
-					<input type="email" name="write-us-email" id="email" placeholder="email@example.com">
-				</div>
-        <div class="max-width">
-					<label class="write-us-title" for="letter">Текст письма:</label>
-					<textarea name="write-us-letter" id="letter" placeholder="В свободной форме"></textarea>
-				</div>
-			  <div class="button-container">
+			  <div class="write-us-button">
 				  <button class="button button-red button-write-us" type="submit">Отправить</button>	
 				</div>
 			</form>
