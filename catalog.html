@@ -58,7 +58,7 @@
 		<main class="container">
 			<div class="main-breadcrumbs content-center">
 				<ul class="breadcrumbs-items">
-					<li><a class="breadcrumb breadcrumb-home"href="index.html"><span class="visually-hidden">Главная</span></a></li>
+					<li><a class="breadcrumb breadcrumb-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
 					<li class="breadcrumb-icon"><a class="breadcrumb breadcrumb-text" href="#">Каталог</a></li>
 					<li class="breadcrumb-icon"><a class="breadcrumb breadcrumb-text" href="#">Инструмент</a></li>
 					<li class="breadcrumb-icon"><a class="breadcrumb breadcrumb-text">Перфораторы</a></li>
@@ -72,61 +72,61 @@
 						<span class="sorting-title">Фильтр:</span>
 						 <form class="catalog-filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
 							<fieldset>
-								<legend class="legend-title">Цена:</legend>
+								<legend class="legend-title legend-price">Цена:</legend>
 								<div class="price-range-form">
 									<div class="range-inner">
 										<div class="range-full-width">
-											<span class="required-width"></span>
+											<div class="required-width"></div>
 										</div>
-											<button class="min-price-button" type="button" aria-label="Указатель выбора минимальной цены"></button>
-											<button class="max-price-button" type="button" aria-label="Указатель выбора максимальной цены"></button>
+											<div class="catalog-range-button min-price-button" aria-label="Указатель выбора минимальной цены"></div>
+											<div class="catalog-range-button max-price-button" aria-label="Указатель выбора максимальной цены"></div>
 									</div>
 									<div class="price-range-input">
 										<label class="visually-hidden" for="min-price-value">Минимальная цена:</label>
-										<input type="text" name="min-price-value" id="min-price-value" placeholder="0">
+										<input class="min-price-value" type="text" name="min-price-value" id="min-price-value" placeholder="0">
 										<span class="connection-input-symbol">—</span>
 										<label class="visually-hidden" for="max-price-value">Максимальная цена:</label>
-										<input type="text" name="max-price-value" id="max-price-value" placeholder="30 000">
+										<input class="max-price-value" type="text" name="max-price-value" id="max-price-value" placeholder="30000">
 									</div>
 								</div>
 							</fieldset>
 							<div class="catalog-form-container">
 								<fieldset>
-									<legend class="legend-title">Производители:</legend>
+									<legend class="legend-title legend-companies">Производители:</legend>
 									<ul class="company-form-list">
 										<li>
-											<input type="checkbox" name="bosch" id="bosch" checked>
-											<label for="bosch">Bosch</label>
+											<input class="visually-hidden company-form-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+											<label class="company-label" for="bosch">Bosch</label>
 										</li>
 										<li>
-											<input type="checkbox" name="interskol" id="interskol">
-											<label for="interskol">Интерскол</label>
+											<input class="visually-hidden company-form-checkbox" type="checkbox" name="interskol" id="interskol">
+											<label class="company-label" for="interskol">Интерскол</label>
 										</li>
 										<li>
-											<input type="checkbox" name="makita" id="makita" checked>
-											<label for="makita">Makita</label>
+											<input class="visually-hidden company-form-checkbox" type="checkbox" name="makita" id="makita" checked>
+											<label class="company-label" for="makita">Makita</label>
 										</li>
 										<li>
-											<input type="checkbox" name="dewalt" id="dewalt">
-											<label for="dewalt">Dewalt</label>
+											<input class="visually-hidden company-form-checkbox" type="checkbox" name="dewalt" id="dewalt"> 
+											<label class="company-label" for="dewalt">Dewalt</label>
 											</li>
 										<li>
-											<input type="checkbox" name="hitachi" id="hitachi">
-											<label for="hitachi">Hitachi</label>
+											<input class="visually-hidden company-form-checkbox" type="checkbox" name="hitachi" id="hitachi">
+											<label class="company-label" for="hitachi">Hitachi</label>
 										</li>
 									</ul>
 								</fieldset>
 							</div>
 							<fieldset>
-								<legend class="legend-title">Питание:</legend>
+								<legend class="legend-title legeng-charge">Питание:</legend>
 								<ul class="charging-form-list">
 									<li>
-											<input type="radio" name="charge" value="battery" id="with-battery" checked>
-											<label for="with-battery">Аккумуляторные</label>
+											<input class="visually-hidden charging-form-input" type="radio" name="charge" value="battery" id="with-battery" checked>
+											<label class="charging-form-label" for="with-battery">Аккумуляторные</label>
 									</li>
 									<li>
-										<input type="radio" name="charge" value="without-battery" id="without-battery">
-										<label for="without-battery">Сетевые</label>
+										<input class="visually-hidden charging-form-input" type="radio" name="charge" value="without-battery" id="without-battery">
+										<label class="charging-form-label" for="without-battery">Сетевые</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -306,12 +306,12 @@
 			</div>
 		</footer>
 		
-		<section class="modal-cart-add">
+		<section class="modal-cart">
 			<h2 class="visually-hidden">Меню подтверждения покупки</h2>
-			<p>Товар добавлен в корзину!</p>
-			<div class="button-container">
-				<a href="#" class="button button-red">Оформить заказ</a>
-				<a href="#" class="button button-clean">Продолжить покупки</a>
+			<p class="modal-cart-text">Товар добавлен в корзину!</p>
+			<div class="modal-button-container">
+				<a href="#" class="button button-red modal-button-cart">Оформить заказ</a>
+				<a href="#" class="button button-clean modal-button-cart">Продолжить покупки</a>
 			</div>
 			<button class="close-modal" type="button" aria-label="Закрыть окно подтверждения покупки"></button>
 		</section>
