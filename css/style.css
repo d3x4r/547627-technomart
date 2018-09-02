@@ -1942,7 +1942,7 @@ button.button {
 	background-image: url("../img/checkbox-on-hover.svg");
 }
 
-.company-form-checkbox:disabled + .company-label::before {
+.company-form-checkbox:disabled + .company-label {
 	opacity: 0.3;
 }
 
@@ -1987,6 +1987,10 @@ button.button {
 
 .charging-form-input:checked + .charging-form-label:hover::before {
 	background-image: url("../img/radio-on-hover.svg");
+}
+
+.charging-form-input:disabled + .charging-form-label {
+	opacity: 0.3;
 }
 
 .sorting-list,
