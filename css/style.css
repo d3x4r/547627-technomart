@@ -533,6 +533,9 @@ img {
 	position: absolute;
 	top: 60px;
 	left: 24px;
+	
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .slider-button-inner {
@@ -810,10 +813,8 @@ img {
 	font-weight: bold;
 }
 
-.slider-slogan {
+.slogan-perg {
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
 }
 
 .features-slider-buttons {
@@ -858,10 +859,15 @@ img {
 }
 
 .catalog-item {
+	margin-right: 20px;
 	position: relative;
 	width: 218px;
 	padding-bottom: 10px;
 	border: 1px solid #eaeaea;
+}
+
+.catalog-items-list .catalog-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .item-for-catalog {
@@ -931,8 +937,8 @@ img {
 	min-width: 42px;
 	margin-top: 44px;
 	margin-left: 41px;
-	margin-bottom: 7px;
-	padding-top: 11px;
+	margin-bottom: 8px;
+	padding-top: 9px;
 	padding-left: 49px;
 	padding-right: 44px;
 	padding-bottom: 7px;
@@ -975,11 +981,11 @@ img {
 	vertical-align: top;
 	min-width: 71px;
 	margin-left: 41px;
-	margin-bottom: 28px;
-	padding-top: 8px;
+	margin-bottom: 30px;
+	padding-top: 7px;
 	padding-left: 33px;
 	padding-right: 25px;
-	padding-bottom: 6px;
+	padding-bottom: 7px;
 	
 	color: #32425c;
 	
@@ -1044,7 +1050,7 @@ img {
 	padding-top: 30px;
 	padding-left: 24px;
 	padding-right: 35px;
-	padding-bottom: 30px;
+	padding-bottom: 29px;/*30*/
 	
 	font-weight: normal;
 }
@@ -1066,7 +1072,7 @@ img {
 	width: 218px;
 	margin:0;
 	margin-bottom: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 26px;/*25*/
 	
 	border: 1px solid #e5e5e5;
 }
@@ -1086,6 +1092,7 @@ img {
 .service-slider-list {
 	position: relative;
 	margin: 0;
+	margin-top: 2px;
 	padding: 0;
 	list-style: none;
 }
@@ -1105,7 +1112,6 @@ img {
 
 .service-slider {
 	display: flex;
-
 }
 
 .slides-guarantee,
@@ -1118,7 +1124,7 @@ img {
 	box-sizing: border-box;
 	min-width: 240px;
 	min-height: 61px;
-	padding-top: 15px;
+	padding-top: 14px;
 	text-align: left;
 	padding-left: 22px;
 	
@@ -1155,7 +1161,7 @@ img {
 }
 
 .title-delivery {
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 }
 
 .text-delivery {
@@ -1164,13 +1170,13 @@ img {
 
 .slides-delivery {
 	background-image: url("../img/service-delivery.png");
-	background-position: 151px 24px;
+	background-position: 151px 25px;
 	background-repeat: no-repeat;
 }
 
 .slides-guarantee {
 	background-image: url("../img/service-guarantee.png");
-	background-position: 239px 2px;
+	background-position: 239px 3px;
 	background-repeat: no-repeat;
 }
 
@@ -1180,25 +1186,41 @@ img {
 
 .slides-credit {	
 	background-image: url("../img/service-credit.png");
-	background-position: 165px -1px;
+	background-position: 165px 1px;
 	background-repeat: no-repeat;
 }
 
-.slider-title-credit {
-	margin-bottom: 22px;
+.title-credit {
+	margin-bottom: 24px;
+}
+
+.title-guarantee {
+	margin-bottom: 24px;
 }
 
 .text-credit {
-	margin-bottom: 33px;
+	margin-bottom: 27px;
 }
 
+.button-credit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 195px;
+	min-height: 38px;
+	padding: 0;
+	margin: 0;
+}
+
+/*
 .button-credit {
 	padding-top: 10px;
 	padding-right: 44px;
 	padding-left: 44px;
 	padding-bottom: 10px;
 }
-
+*/
 .service-slider-slides {
 	display: none;
 	width: 620px;
@@ -1211,11 +1233,11 @@ img {
 }
 
 .slides-guarantee {
-	padding-bottom: 109px;
+	padding-bottom: 106px;
 }
 
 .slides-credit {
-	padding-bottom: 122px;
+	padding-bottom: 113px;
 }
 
 #delivery-radio-button:checked ~ .service-slider-inner .slides-delivery {
@@ -1237,7 +1259,7 @@ img {
 	background-color: #ffffff;
 	display: block;
 	color: #32425c;
-	border: none;
+	border-color: #ffffff;
 }
 
 .promo-delivery {
@@ -1263,7 +1285,7 @@ img {
 	width: 25px;
 	height: 2px;
 	top: 10px;
-	left: -37px;
+	left: -36px;
 	
 	background-color: #ee3643;
 }
@@ -1302,7 +1324,7 @@ img {
 }
 
 .main-footer{
-	margin-top: 94px;
+	margin-top: 93px;
 	
 }
 
@@ -2044,8 +2066,8 @@ button.button {
 .catalog-items-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
+
 
 .button-catalog-form {
 	min-width: 140px;
@@ -2232,7 +2254,11 @@ button.button {
 
 .goods-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.goods-list .catalog-item:last-child {
+	margin-right: 0;
 }
 
 .companies {
@@ -2253,21 +2279,21 @@ button.button {
 } 
 
 .service {
-	margin-bottom: 78px;
+	margin-bottom: 79px;
 }
 
 .service-title {
 	margin:0;
 	margin-bottom: 25px;
 	padding:0;
-	padding-top: 66px;
+	padding-top: 65px;
 	
 	font-weight: normal;
 }
 
 .service-promo {
 	width: 400px;
-	margin-bottom: 69px;
+	margin-bottom: 68px; /*69*/
 }
 
 .about-contact-columns {
