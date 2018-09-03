@@ -1311,12 +1311,15 @@ img {
 	padding-bottom: 10px;
 }
 
+
 .button-contacts {
 	padding-top: 11px;
 	padding-left: 64px;
-	padding-right: 59px;
+	padding-right: 58px;
 	padding-bottom: 10px;
 }
+
+
 
 .main-footer,
 .footer {
@@ -1448,7 +1451,6 @@ img {
 
 .footer-bottom-row {
 	display: flex;
-	justify-content: flex-end;
 }
 
 .developers-contact {
