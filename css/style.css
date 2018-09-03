@@ -8,6 +8,7 @@ body {
 	color: #000000;
 	
 	background-color: #ffffff;
+	word-wrap: break-word;
 }
 
 a {
@@ -54,6 +55,7 @@ img {
 	padding-left: 55px;
 	font-size: 24px;
 	line-height: 24px;
+
 }
 
 .header-logo:hover,
