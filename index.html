@@ -230,7 +230,7 @@
 					<h2 class="contacts-title heading-title">Контакты</h2>
 					<p class="contacts-text">Вы можете забрать товар сами,  заехав в наш офис:  </p>
 					<div class="contacts-map">
-						<a><img src="img/map-small.jpg" width="300" height="158" alt="Схема проезда"></a>
+						<a class="map-link"><img src="img/map-small.jpg" width="300" height="158" alt="Схема проезда"></a>
 					</div>
 					<a class="button button-red button-contacts" href="#">Заблудились? Напишите нам!</a>
 				</section>
@@ -310,12 +310,105 @@
 			</form>
 			<button class="close-modal" type="button" aria-label="Закрыть окно связи"></button>
     </section>
+		
 		<section class="map">
 			<h2 class="visually-hidden">Как добраться</h2>
-			<img src="img/map-popup.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-			<!-- Здесь будет карта? -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995517329779!2d30.322163072074346!3d59.93879419679611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1536088155503" width="940" height="446"allowfullscreen></iframe>
+				<div class="map-static">
+					<img src="img/map-popup.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				</div>
       <button class="close-modal" type="button" aria-label="Закрыть карту"></button>
 		</section>
+		
+		<script>
+			var writeUsLink = document.querySelector(".button-contacts");
+			var writeUsModal = document.querySelector(".write-us");
+			var close = writeUsModal.querySelector(".close-modal");
+			
+			var writeUsForm = writeUsModal.querySelector(".write-us-form");
+			
+			var yourName = writeUsModal.querySelector(".write-us-name");
+			var yourEmail = writeUsModal.querySelector(".write-us-email");
+			var yourText = writeUsModal.querySelector(".write-us-letter");
+			
+			var isStorageSupport = true;
+			var storage = "";
+  
+			try {
+				storage = localStorage.getItem("name");
+			} catch (err) {
+				isStorageSupport = false;
+			}
+			
+			
+			
+			writeUsLink.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				writeUsModal.classList.add("modal-show");
+				
+				if (storage) {
+					yourName.value = storage;
+					yourEmail.focus();
+				}else {
+					yourName.focus();
+				}
+			});
+			
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				writeUsModal.classList.remove("modal-show");
+				writeUsModal.classList.remove("write-us-error");
+			});
+			
+			writeUsForm.addEventListener("submit", function (evt) {
+				if (!yourName.value || !yourEmail.value || !yourText.value) {
+					evt.preventDefault();
+					writeUsModal.classList.remove("write-us-error");
+					writeUsModal.offsetWidth = writeUsModal.offsetWidth;
+					writeUsModal.classList.add("write-us-error");
+				} else {
+					if (isStorageSupport)	{			
+					localStorage.setItem("name", yourName.value);
+				}
+		   }
+			});
+			
+			window.addEventListener("keydown", function (evt) {
+				if (evt.keyCode === 27) {
+					evt.preventDefault();
+					if (writeUsModal.classList.contains("modal-show")) {
+					writeUsModal.classList.remove("modal-show");
+					writeUsModal.classList.remove("write-us-error");
+					}
+				}
+			});
+			
+			
+			var mapLink = document.querySelector(".map-link");
+
+			var mapModal = document.querySelector(".map");
+			var mapClose = mapModal.querySelector(".close-modal");
+			
+			mapLink.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				mapModal.classList.add("modal-show");
+			});
+
+			mapClose.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				mapModal.classList.remove("modal-show");
+			});
+
+			window.addEventListener("keydown", function (evt) {
+				evt.preventDefault();
+				if (evt.keyCode === 27) {
+					if (mapModal.classList.contains("modal-show")) {
+					mapModal.classList.remove("modal-show");
+					}
+				}
+			});
+			
+		</script>
   </body>
 </html>
 	
