@@ -534,17 +534,6 @@ img {
   color: #ffffff;
 }
 
-/*
-.features-item {}{
-	width: 258px;
-	padding-left: 22px;
-	padding-top: 20px;
-	padding-right: 20px;
-	
-	font-family: Cuprum, Arial, sans-serif;
-	color: #ffffff;
-}
-*/
 .features-title {
   margin: 0;
   margin-bottom: 13px;
@@ -570,7 +559,6 @@ img {
   height: 266px;
 }
 
-
 .slider-title {
   position: absolute;
   top: 22px;
@@ -591,18 +579,6 @@ img {
   line-height: 24px;
 }
 
-/*
-.slider-button-inner {
-	position: absolute;
-	padding-top: 11px;
-	padding-left: 49px;
-	padding-right: 45px;
-	padding-bottom: 11px;
-	top: 205px;
-	left: 25px;
-}
-*/
-
 .slider-button-inner {
   position: absolute;
   top: 206px;
@@ -614,8 +590,6 @@ img {
   padding-top: 10px;
   padding-left: 49px;
 }
-
-
 
 .slider-inner {
   display: none;
@@ -681,9 +655,7 @@ img {
 .main-slider-toggle::after {
   content: "";
   position: absolute;
-/*	top: 20%;
-	left: 15%;
-*/
+
   top: calc(50% - 5px);
   left: calc(50% - 5px);
   z-index: 1;
@@ -752,7 +724,6 @@ img {
 
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 .features-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -894,7 +865,6 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .features-slider-text {
   font-family: Cuprum, Arial, sans-serif;
@@ -1174,15 +1144,6 @@ img {
   vertical-align: top;
 }
 
-/*.companies-item {
-	width: 218px;
-	margin:0;
-	margin-bottom: 20px;
-	padding-bottom: 25px;
-	
-	border: 1px solid #e5e5e5;
-}*/
-
 .companies-item {
   position: relative;
 
@@ -1333,16 +1294,6 @@ img {
   padding-top: 10px;
 }
 
-/*
-.button-credit {
-	padding-top: 10px;
-	padding-right: 44px;
-	padding-left: 44px;
-	padding-bottom: 10px;
-}
-*/
-
-
 .service-slider-inner {
   position: relative;
 }
@@ -1353,7 +1304,6 @@ img {
   display: none;
   width: 630px;
 
-/*padding-bottom: 130px;*/
   margin-left: 80px;
 }
 
@@ -1452,8 +1402,6 @@ img {
   padding-bottom: 10px;
   padding-left: 64px;
 }
-
-
 
 .main-footer,
 .footer {
@@ -2223,7 +2171,7 @@ button.button {
 
   border-bottom: 1px solid red;
 }
-/*Ниже индикатор активности ?*/
+
 .sorting-item:focus {
   color: #ee3643;
 
@@ -2270,7 +2218,6 @@ button.button {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .button-catalog-form {
   min-width: 140px;
