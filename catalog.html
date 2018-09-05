@@ -338,8 +338,8 @@
 			});
 
 			window.addEventListener("keydown", function (evt) {
-				evt.preventDefault();
 				if (evt.keyCode === 27) {
+					evt.preventDefault();
 					if (modalCart.classList.contains("modal-show")) {
 					modalCart.classList.remove("modal-show");
 					}

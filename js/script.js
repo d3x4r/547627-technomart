@@ -70,8 +70,8 @@
 			});
 
 			window.addEventListener("keydown", function (evt) {
-				evt.preventDefault();
 				if (evt.keyCode === 27) {
+					evt.preventDefault();
 					if (mapModal.classList.contains("modal-show")) {
 					mapModal.classList.remove("modal-show");
 					}
