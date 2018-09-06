@@ -1,13 +1,17 @@
 			var writeUsLink = document.querySelector(".button-contacts");
 			var writeUsModal = document.querySelector(".write-us");
+	
 			var close = writeUsModal.querySelector(".close-modal");
 			var writeUsForm = writeUsModal.querySelector(".write-us-form");
+
 			var yourName = writeUsModal.querySelector(".write-us-name");
 			var yourEmail = writeUsModal.querySelector(".write-us-email");
 			var yourText = writeUsModal.querySelector(".write-us-letter");
 			var isStorageSupport = true;
 			var storage = "";
   
+			
+	
 			try {
 				storage = localStorage.getItem("name");
 			} catch (err) {
@@ -77,3 +81,5 @@
 					}
 				}
 			});
+			
+	
