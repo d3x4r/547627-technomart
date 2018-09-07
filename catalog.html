@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 		<header class="header">
@@ -139,7 +139,7 @@
 							<ul class="sorting-list">
 								<li><a class="sorting-item by-price sort-type" href="#">По цене</a></li>
 								<li><a class="sorting-item by-type" href="#">По типу</a></li>
-								<li><a class="sorting-item" href="#">По функционалу</a></li>
+								<li><a class="sorting-item by-functionality" href="#">По функционалу</a></li>
 							</ul>
 							<ul class="sorting-icon">
 								<li class="sorting-icon-container"><a class="sorting-up sorting-active-up" href="#" aria-label="Сортировка по возрастанию"></a></li>
@@ -315,37 +315,6 @@
 			</div>
 			<button class="close-modal" type="button" aria-label="Закрыть окно подтверждения покупки"></button>
 		</section>
-		
-
-			<script>
-			var purchase = document.querySelectorAll(".button-green"),index, button;
-
-			var modalCart = document.querySelector(".modal-cart");
-			var cartClose = modalCart.querySelector(".close-modal");
-			
-
-			for (index = 0; index < purchase.length; index++) {
-				button = purchase[index];
-				button.addEventListener('click', function (event) {
-        modalCart.classList.add("modal-show");
-        event.preventDefault();
-				});
-			}	
-
-			cartClose.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				modalCart.classList.remove("modal-show");
-			});
-
-			window.addEventListener("keydown", function (evt) {
-				if (evt.keyCode === 27) {
-					evt.preventDefault();
-					if (modalCart.classList.contains("modal-show")) {
-					modalCart.classList.remove("modal-show");
-					}
-				}
-			});
-			</script>		
-
+		<script src="js/script.min.js"></script>
 	</body>
 </html>

@@ -349,6 +349,7 @@ img {
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
+  width: 280px;
   margin-left: 69px;
 
   -ms-flex-wrap: wrap;
@@ -427,6 +428,7 @@ img {
 .header-contacts-adress {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 270px;
   padding-right: 5px;
   padding-left: 9px;
 
@@ -441,6 +443,7 @@ img {
 
 .user-login-item {
   display: inline-block;
+  margin-bottom: 10px;
   padding-top: 12px;
 
   font-size: 21px;
@@ -1112,7 +1115,7 @@ img {
 .button-bookmark {
   display: inline-block;
   min-width: 71px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   margin-left: 41px;
   padding-top: 7px;
   padding-right: 25px;
@@ -1135,8 +1138,7 @@ img {
 
 .price {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 9px;
   margin-left: 77px;
 
   font-weight: bold;
@@ -1155,25 +1157,35 @@ img {
 
 .price-background {
   position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 122px;
+  min-height: 38px;
+  margin-left: 42px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+
+  background-color: #ee3643;
+  border-radius: 5px 0 0 3px;
 }
 
 .price-background::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -35px;
-  z-index: -1;
+  top: 0;
+  left: 121px;
 
-  width: 141px;
-  height: 38px;
-
-  background-image: url("../img/price-red.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border-top: 19px solid transparent;
+  border-right: none;
+  border-bottom: 19px solid transparent;
+  border-left: 20px solid #ee3643;
 }
 
 .without-discount {
-  margin-top: 50px;
+  margin-top: 39px;
 }
 
 .companies-title {
@@ -1375,13 +1387,7 @@ img {
   -ms-flex-pack: center;
 }
 
-.service-slider-inner {
-  position: relative;
-}
-
 .service-slider-slides {
-  position: absolute;
-
   display: none;
   width: 630px;
   margin-left: 80px;
@@ -2685,7 +2691,6 @@ button.button {
 
 .service {
   margin-bottom: 79px;
-  padding-bottom: 101px;
 }
 
 .service-title {
@@ -2722,7 +2727,7 @@ button.button {
 }
 
 .first-promo-text {
-  margin-bottom: 24px;;
+  margin-bottom: 24px;
 }
 
 .second-promo-text {
@@ -2868,7 +2873,11 @@ button.button {
 }
 
 .by-type {
-  margin-right: 66px;
+  margin-right: 33px;
+}
+
+.by-functionality {
+  margin-left: 33px;
 }
 
 .new-features {
